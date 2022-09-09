@@ -1,3 +1,44 @@
+# Airbnb Seasonalities: Lisbon vs Rio de Janeiro
+
+How does the effect of seasonalities differ for Airbnbs that reside in the Northern and Southern hemisphere, based on Lisbon, Portugal and Rio de Janeiro, Brazil?
+
+## Motivation
+
+The vacation seasons is one of the most busy time periods for Airbnb hosts, 
+with an large influx of tourists traveling to popular vacation spots to spend their holidays, increasing the demand therefore the prices. 
+Nevertheless, the vacation seasons differ depending on the hemisphere. 
+This project aims to compare the price of Airbnb between the two cities, Lisbon and Rio de Janeiro, 
+situated in two different hemispheres, to determine the effect of seasonality on the price of Airbnb in these cities.
+
+## Methods and results
+
+Method:
+1. Data will be acquired from [Inside Airbnb](http://insideairbnb.com/)
+2. Data cleaning/auditing will be performed as required
+3. Regression analysis will be performed on the date and prices
+4. Automate and refine this process
+
+## Repository overview
+├── README.md
+├── data
+├── gen
+│   ├── analysis
+│   ├── data-preparation
+│   └── paper
+└── src
+    ├── analysis
+    ├── data-preparation
+    └── paper
+    
+
+## Running instructions
+
+## More resources
+
+## About
+
+This repository is a project for the course Data Preparation and Workflow Management at Tilburg University.
+
 # Example of reproducible research workflow 
 
 This is a basic example repository using Gnu make for a reproducible research workflow, as described in detail here: [tilburgsciencehub.com](http://tilburgsciencehub.com/). 
