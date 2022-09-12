@@ -19,16 +19,16 @@ Method:
 4. Automate and refine this process
 
 ## Repository overview
-├── README.md
-├── data
-├── gen
-│   ├── analysis
-│   ├── data-preparation
-│   └── paper
-└── src
-    ├── analysis
-    ├── data-preparation
-    └── paper
+	├── README.md
+	├── data
+	├── gen
+	│   ├── analysis
+	│   ├── data-preparation
+	│   └── paper
+	└── src
+ 	   ├── analysis
+ 	   ├── data-preparation
+ 	   └── paper
     
 
 ## Running instructions
@@ -38,6 +38,8 @@ Method:
 ## About
 
 This repository is a project for the course Data Preparation and Workflow Management at Tilburg University.
+
+---------------------------------------------------------------------------------------------------
 
 # Example of reproducible research workflow 
 
