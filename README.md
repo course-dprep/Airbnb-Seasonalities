@@ -1,14 +1,14 @@
 # Airbnb Seasonalities: Lisbon vs Rio de Janeiro
 
-How does the effect of seasonalities differ for Airbnbs that reside in the Northern and Southern hemisphere, based on Lisbon, Portugal and Rio de Janeiro, Brazil?
+How does the effect of seasonalities differ for Airbnbs that reside in the Northern and Southern hemisphere, considering the difference in summer and winter season timings due to their geographical location?
 
 ## Motivation
 
 The vacation seasons is one of the most busy time periods for Airbnb hosts, 
 with an large influx of tourists traveling to popular vacation spots to spend their holidays, increasing the demand therefore the prices. 
 Nevertheless, the vacation seasons differ depending on the hemisphere. 
-This project aims to compare the price of Airbnb between the two cities, Lisbon and Rio de Janeiro, 
-situated in two different hemispheres, to determine the effect of seasonality on the price of Airbnb in these cities.
+This project aims to compare the price of Airbnb between various cities across the globe situated in two different hemispheres, 
+to determine the effect of seasonality on the price of Airbnb in these cities.
 
 ## Methods and results
 
