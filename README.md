@@ -1,4 +1,4 @@
-# Airbnb Seasonalities: Lisbon vs Rio de Janeiro
+# Airbnb Seasonalities: Northern Hemisphere (Europe) vs Southern Hemisphere (South America)
 
 How does the effect of seasonalities differ for Airbnbs that reside in the Northern and Southern hemisphere, considering the difference in summer and winter season timings due to their geographical location?
 
