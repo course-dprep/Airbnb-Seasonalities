@@ -71,7 +71,7 @@ Any files related to issues with the data or the model estimation will be stored
 
 ## About
 
-This research is carried out in implementation of the course Data Preparation and Workflow Management. This is a part of the Master program of Marketing Analytics for the course Data Preparation and Workflow Management at Tilburg University. The following authors contributed to this research:
+This research is carried out in implementation of the course Data Preparation and Workflow Management. This is a part of the Master program of Marketing Analytics at Tilburg University. The following authors contributed to this research:
 
 Zhiyong Zhou
 Marieke Beerens
