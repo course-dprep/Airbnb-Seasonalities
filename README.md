@@ -75,8 +75,6 @@ Mevludin Ademovic
 
 
 
-This repository is a project for the course Data Preparation and Workflow Management at Tilburg University.
-
 ---------------------------------------------------------------------------------------------------
 
 # Example of reproducible research workflow 
