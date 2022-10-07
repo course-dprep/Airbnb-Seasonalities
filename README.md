@@ -1,4 +1,4 @@
-# How seasonality affects the Airbnb prices in the various cities situated in different hemispeheres?
+# How seasonality affects the Airbnb prices in the various cities situated in different hemispeheres
 
 ## Motivation
 
