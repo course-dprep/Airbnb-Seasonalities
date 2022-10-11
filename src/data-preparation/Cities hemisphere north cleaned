@@ -17,10 +17,10 @@ city_Prague<- city_Prague %>%
   add_column(City="Prague") %>% add_column(Hemisphere="north")
 View(city_Prague)
 
-city_Paris<-read.csv("calendar data Paris.csv")
-city_Paris<- city_Paris %>%
-  add_column(City="Paris") %>% add_column(Hemisphere="north")
-View(city_Paris)
+city_Vienna<-read.csv("calendar data Vienna.csv")
+city_Vienna<- city_Vienna %>%
+  add_column(City="Vienna") %>% add_column(Hemisphere="north")
+View(city_Vienna)
 
 city_Lisbon<-read.csv("calendar data Lisbon.csv")
 city_Lisbon<- city_Lisbon %>%
@@ -29,13 +29,13 @@ View(city_Lisbon)
 
 #merging the datasets together to form one dataset of the european cities related to the "north" hemishphere
 
-hemisphere_north_cities<-rbind(city_Amsterdam,city_Prague,city_Paris,city_Lisbon)
-View(hemisphere_north_cities)
+Hemisphere_north_cities<-rbind(city_Amsterdam,city_Prague,city_Vienna,city_Lisbon)
+View(Hemisphere_north_cities)
 
 #drops unecessary columns in the dataframe
 drops <- c("date", "adjusted_price", "City", "Hemisphere")
-hemisphere_north_cities <- subset(hemisphere_north_cities, select = drops)
-View(hemisphere_north_cities)
+Hemisphere_north_cities <- subset(Hemisphere_north_cities, select = drops)
+View(Hemisphere_north_cities)
 
 
 #function to assign seasons to months depending on the hemisphere
@@ -49,12 +49,12 @@ time2season <- function(x, hemisphere="north") {
     winter <- which( months %in% c("12", "01", "02") )
     spring <- which( months %in% c("03", "04", "05") )
     summer <- which( months %in% c("06", "07", "08") )
-    autumm <- which( months %in% c("09", "10", "11") ) 
+    autumn <- which( months %in% c("09", "10", "11") ) 
   } else if (hemisphere=="south") {
     winter <- which( months %in% c("05", "06", "07") )
     spring <- which( months %in% c("08", "09", "10") )
     summer <- which( months %in% c("11", "12", "01") )
-    autumm <- which( months %in% c("02", "03", "04") ) 
+    autumn <- which( months %in% c("02", "03", "04") ) 
   } 
   
   #creates of the output
@@ -63,18 +63,29 @@ time2season <- function(x, hemisphere="north") {
   seasons[winter] <- "winter"
   seasons[spring] <- "spring"
   seasons[summer] <- "summer"
-  seasons[autumm] <- "autumm"
+  seasons[autumn] <- "autumn"
   
   return(seasons)
   
 } 
 
 
-
 #adds a season column with season depending on the date and hemisphere
-hemisphere_north_cities$season <- time2season(hemisphere_north_cities$date, "north")
+Hemisphere_north_cities$season <- time2season(Hemisphere_north_cities$date, "north")
+
+#mapping the "season" variable into numeric values which allows for analyses to be performed 
+mapping <- c("winter" = 1, "spring" = 2, "summer" = 3, "autumn" = 4)
+ Hemisphere_north_cities$season_numeric<- mapping[Hemisphere_north_cities$season]
+ 
+#dummy coding the "hemisphere" variable 
+install.packages("fastDummies")
+library(fastDummies)
+Hemisphere_north_cities <- dummy_cols(Hemisphere_north_cities, select_columns = 'Hemisphere')
+
+#changing column names for clarity 
+Hemisphere_north_cities<-Hemisphere_north_cities%>%rename(Hemisphere_dummy=Hemisphere_north)
 
 
 #export the data
-write.csv(hemisphere_north_cities, 'cities north cleaned') 
+write.csv(Hemisphere_north_cities, 'hemisphere_north_cities_cleaned') 
 
