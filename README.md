@@ -9,13 +9,13 @@ This project gives an insight into how hemisphere effects the price of an Airbnb
 With rising inflation and no interest, people are looking for other ways to use their money effectively. One of the options is a second house. They can rent it out for additional income and immediately invest in their savings. If you want to use your second house to earn additional income, the main question becomes where the best place is to set up your second house. Many accommodations are dependent on seasonal or holiday periods. That is why we will investigate which place has the most (or least) price fluctuation between seasons, so that people can choose where it is most profitable for them to rent out a second house via Airbnb.
 
 
-Our research question will therefore be What effect does seasonality (northern hemisphere versus southern hemisphere) have on the price of Airbnb, considering the difference in summer and winter season timings due to their geographical location? 
+Our research question will therefore be What effect does seaonality have on the price of Airbnb, and how does this effect differ for the northern hemisphere versus southern hemisphere?
+ 
 
 We chose four cities in the Northern Hemisphere (Amsterdam, Lisbon, Paris, Prague) and four cities in the Southern Hemisphere (Melbourne, Northern Rivers, Sydney, Western Australia). Four cities in Europe and four cities in Australia. We have chosen Europe and Australia because those cities are the most comparable in terms of prices. This makes it best to compare which locations are most seasonally bound. 
 
 
 
-What effect does seaonality have on the price of Airbnb, and how does this effect differ for the northern hemisphere versus southern hemisphere?
 
 
 ## Data
