@@ -15,6 +15,9 @@ We chose four cities in the Northern Hemisphere (Amsterdam, Lisbon, Paris, Pragu
 
 
 
+What effect does seaonality have on the price of Airbnb, and how does this effect differ for the northern hemisphere versus southern hemisphere?
+
+
 ## Data
 For this research project Airbnb data will be used, accessed through Inside Airbnb.The datasets used in this project are all based on the listings in (Northern Hemispehere) Lisbon, Amsterdam, Prague and Paris, and (Southern Hemispehere) Melbourne, Northern Rivers, Sydney, Western Australia.
 
