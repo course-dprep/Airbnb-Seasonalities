@@ -12,7 +12,7 @@ With rising inflation and no interest, people are looking for other ways to use 
 Our research question will therefore be What effect does seasonality (northern hemisphere versus southern hemisphere) have on the price of Airbnb, considering the difference in summer and winter season timings due to their geographical location? 
 
 We chose four cities in the Northern Hemisphere (Amsterdam, Lisbon, Paris, Prague) and four cities in the Southern Hemisphere (Melbourne, Northern Rivers, Sydney, Western Australia). Four cities in Europe and four cities in Australia. We have chosen Europe and Australia because those cities are the most comparable in terms of prices. This makes it best to compare which locations are most seasonally bound. 
-![image](https://user-images.githubusercontent.com/112617983/195603060-59d13fa8-257d-4ea6-b91b-a0cac1bdff4b.png)
+
 
 
 ## Research question
