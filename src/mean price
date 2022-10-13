@@ -1,0 +1,1 @@
+city %>% group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
