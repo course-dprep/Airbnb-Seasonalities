@@ -6,12 +6,14 @@ This project gives an insight into how hemisphere effects the price of an Airbnb
 
 ## Research motivation
 
-The vacation seasons is one of the most busy time periods for Airbnb hosts, 
-with an large influx of tourists traveling to popular vacation spots to spend their holidays, increasing the demand therefore the prices. 
-Nevertheless, the vacation seasons differ depending on the hemisphere. 
-This project aims to compare the price of Airbnb between various cities across the globe situated in two different hemispheres, 
-to determine the effect of seasonality on the price of Airbnb in these cities.
--->NEEDS ADDITIONAL INFO<--
+With rising inflation and no interest, people are looking for other ways to use their money effectively. One of the options is a second house. They can rent it out for additional income and immediately invest in their savings. If you want to use your second house to earn additional income, the main question becomes where the best place is to set up your second house. Many accommodations are dependent on seasonal or holiday periods. That is why we will investigate which place has the most (or least) price fluctuation between seasons, so that people can choose where it is most profitable for them to rent out a second house via Airbnb.
+
+
+Our research question will therefore be What effect does seasonality (northern hemisphere versus southern hemisphere) have on the price of Airbnb, considering the difference in summer and winter season timings due to their geographical location? 
+
+We chose four cities in the Northern Hemisphere (Amsterdam, Lisbon, Paris, Prague) and four cities in the Southern Hemisphere (Melbourne, Northern Rivers, Sydney, Western Australia). Four cities in Europe and four cities in Australia. We have chosen Europe and Australia because those cities are the most comparable in terms of prices. This makes it best to compare which locations are most seasonally bound. 
+![image](https://user-images.githubusercontent.com/112617983/195603060-59d13fa8-257d-4ea6-b91b-a0cac1bdff4b.png)
+
 
 ## Research question
 
