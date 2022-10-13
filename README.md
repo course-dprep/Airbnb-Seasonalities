@@ -15,7 +15,7 @@ to determine the effect of seasonality on the price of Airbnb in these cities.
 
 ## Research question
 
-What effect does seaonality (northern hemisphere versus southern hemisphere) have on the price of Airbnb, considering the difference in summer and winter season timings due to their geographical location?
+What effect does seaonality have on the price of Airbnb, and how does this effect differ for the northern hemisphere versus southern hemisphere?
 
 ## Data
 For this research project Airbnb data will be used, accessed through Inside Airbnb.The datasets used in this project are all based on the listings in (Northern Hemispehere) Lisbon, Amsterdam, Prague and Paris, and (Southern Hemispehere) Rio de Janeiro, Buenos Aires, Mexico City and Santiago.
