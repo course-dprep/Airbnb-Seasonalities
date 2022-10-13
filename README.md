@@ -1,6 +1,7 @@
 # How seasonality affects the Airbnb prices in the various cities situated in different hemispheres
 
 This project gives an insight into how hemisphere effects the price of an Airbnb. 
+![image](https://user-images.githubusercontent.com/112617983/195584820-e35714a4-8742-4796-b81f-1742badee8ce.jpeg)
 
 ## Research motivation
 
