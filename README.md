@@ -15,15 +15,13 @@ We chose four cities in the Northern Hemisphere (Amsterdam, Lisbon, Paris, Pragu
 
 
 
-## Research question
-
-What effect does seaonality (northern hemisphere versus southern hemisphere) have on the price of Airbnb, considering the difference in summer and winter season timings due to their geographical location?
-
 ## Data
-For this research project Airbnb data will be used, accessed through Inside Airbnb.The datasets used in this project are all based on the listings in (Northern Hemispehere) Lisbon, Amsterdam, Prague and Paris, and (Southern Hemispehere) Rio de Janeiro, Buenos Aires, Mexico City and Santiago.
+For this research project Airbnb data will be used, accessed through Inside Airbnb.The datasets used in this project are all based on the listings in (Northern Hemispehere) Lisbon, Amsterdam, Prague and Paris, and (Southern Hemispehere) Melbourne, Northern Rivers, Sydney, Western Australia.
 
 ## Methods and results
 In this chapter we will give a brief overview of the methods that have been applied, followed by the results from the ANOVA test and ends with the conclusion to our research question.
+
+
 
 ### Method:
 1. Data will be acquired from [Inside Airbnb](http://insideairbnb.com/)
