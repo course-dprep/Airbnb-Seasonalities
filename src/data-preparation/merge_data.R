@@ -76,9 +76,11 @@ Westernaus_Winter <- subset(merged_cities_north_south, City == 'Western Australi
 merged_cities_Winter <- rbind(Amsterdam_Winter, Lisbon_Winter, Prague_Winter, Vienna_Winter, Melbourne_Winter, Northernrivers_Winter, Sydney_Winter, Westernaus_Winter)
 View(merged_cities_Winter)
 
+# Merge every data frame
+all_cities_merged <- rbind(merged_cities_Autumn, merged_cities_Spring, merged_cities_Summer, merged_cities_Winter)
+View(all_cities_merged)
 
-# Add column mean for every merged data frame
-merged_cities_south_north_Autumn$Mean <- mean(merged_cities_south_north_Autumn$adjusted_price)
-merged_cities_south_north_Spring$Mean <- mean(merged_cities_south_north_Spring$adjusted_price)
-merged_cities_south_north_Summer$Mean <- mean(merged_cities_south_north_Summer$adjusted_price)
-merged_cities_south_north_Winter$Mean <- mean(merged_cities_south_north_Winter$adjusted_price)
+# Write csv files
+write.csv(all_cities_merged, "all_cities_merged.csv")
+
+
