@@ -1,1 +1,0 @@
-merged_cities_south_north$seasons = ifelse(merged_cities_south_north$Hemisphere=='North' & merged_cities_south_north$date %in% c('1','2','3'), 'winter','summer')
