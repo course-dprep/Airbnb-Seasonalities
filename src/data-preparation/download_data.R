@@ -12,5 +12,5 @@ for (url in urls) {
   filename = paste0(gsub('[^a-z]', '', url), '.csv') 
   filename = gsub('httpdatainsideairbnbcom', '', filename)
   filename = gsub('datacalendarcsvgz', '', filename)
-  download.file(url, destfile = filename) 
+  download.file(url, file.path('data', destfile = filename)) 
 }
