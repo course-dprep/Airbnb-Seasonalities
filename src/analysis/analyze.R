@@ -1,11 +1,15 @@
-# load 
-load("./gen/analysis/input/data_cleaned.RData")
+# Load csv file
+library(readr)
+all_cities_merged <- read_csv("all_cities_merged.csv")
+View(all_cities_merged)
+summary(all_cities_merged)
 
-# Estimate model 1 
-m1 <- lm(V1 ~ V3 + V4,df_cleaned)
+# Make City and seasons factors
+all_cities_merged$City <- as_factor(all_cities_merged$City)
+all_cities_merged$seasons <- as_factor(all_cities_merged$seasons)
 
-# Estimate model 2 
-m2 <- lm(V1 ~ V3 + V4 + V5 , df_cleaned)
+# Visualization
 
-# Save results
-save(m1,m2,file="./gen/analysis/output/model_results.RData")
+library(ggplot2)
+ggplot(all_cities_merged, aes (x=price_numeric, y=seasons, fill=City)) + geom_col(position="dodge")
+
