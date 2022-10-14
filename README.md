@@ -12,14 +12,14 @@ With rising inflation and no interest, people are looking for other ways to use 
 Our research question will therefore be What effect does seaonality have on the price of Airbnb, and how does this effect differ for the northern hemisphere versus southern hemisphere?
  
 
-We chose four cities in the Northern Hemisphere (Amsterdam, Lisbon, Paris, Prague) and four cities in the Southern Hemisphere (Melbourne, Northern Rivers, Sydney, Western Australia). Four cities in Europe and four cities in Australia. We have chosen Europe and Australia because those cities are the most comparable in terms of prices. This makes it best to compare which locations are most seasonally bound. 
+We chose four cities in the Northern Hemisphere (Amsterdam, Lisbon, Paris, Ghent) and four cities in the Southern Hemisphere (Melbourne, Northern Rivers, Sydney, Western Australia). Four cities in Europe and four cities in Australia. We have chosen Europe and Australia because those cities are the most comparable in terms of prices. This makes it best to compare which locations are most seasonally bound. 
 
 
 
 
 
 ## Data
-For this research project Airbnb data will be used, accessed through Inside Airbnb.The datasets used in this project are all based on the listings in (Northern Hemispehere) Lisbon, Amsterdam, Prague and Paris, and (Southern Hemispehere) Melbourne, Northern Rivers, Sydney, Western Australia.
+For this research project Airbnb data will be used, accessed through Inside Airbnb.The datasets used in this project are all based on the listings in (Northern Hemispehere) Lisbon, Amsterdam, Ghent and Paris, and (Southern Hemispehere) Melbourne, Northern Rivers, Sydney, Western Australia.
 
 ## Methods and results
 In this chapter we will give a brief overview of the methods that have been applied, followed by the results from the ANOVA test and ends with the conclusion to our research question.
