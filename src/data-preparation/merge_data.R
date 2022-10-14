@@ -1,3 +1,11 @@
+library(readr)
+library(dplyr)
+library(tidyr)
+library(tidyverse)
+
+merged_cities_north <- read.csv("merged_cities_north.csv")
+merged_cities_south <- read.csv("merged_cities_south.csv")
+
 #MERGE NORTH AND SOUTH DATA FRAMES---------------------------------------
 merged_cities_north_south <- rbind(merged_cities_north, merged_cities_south)
 View(merged_cities_north_south)
