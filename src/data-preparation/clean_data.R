@@ -6,7 +6,7 @@ library(tidyverse)
 #READ THE CSV FILES---------------------------------------
 city_ams <- read_csv("thenetherlandsnorthhollandamsterdam.csv")
 city_lisbon <- read_csv("portugallisbonlisbon.csv")
-city_prague <- read_csv("czechrepublicpragueprague.csv")
+city_ghent <- read_csv("belgiumvlgghent.csv")
 city_vienna <- read_csv("austriaviennavienna.csv")
 city_melbourne <- read_csv("australiavicmelbourne.csv")
 city_northernrivers <- read_csv("australianswnorthernrivers.csv")
@@ -14,10 +14,10 @@ city_sydney <- read_csv("australianswsydney.csv")
 city_westernaus <- read_csv("australiawawesternaustralia.csv")
 
 #CLEAN DATAFRAME-----------------------------------------
-#REMOVE SIGN
+# Remove sign from price and make it numeric
 city_ams <- city_ams %>% mutate(price_numeric = as.numeric(gsub('[$]|[,]', '', price)))
 city_lisbon <- city_lisbon %>% mutate(price_numeric = as.numeric(gsub('[$]|[,]', '', price)))
-city_prague <- city_prague %>% mutate(price_numeric = as.numeric(gsub('[$]|[,]', '', price)))
+city_ghent <- city_ghent %>% mutate(price_numeric = as.numeric(gsub('[$]|[,]', '', price)))
 city_vienna <- city_vienna %>% mutate(price_numeric = as.numeric(gsub('[$]|[,]', '', price)))
 city_melbourne <- city_melbourne %>% mutate(price_numeric = as.numeric(gsub('[$]|[,]', '', price)))
 city_northernrivers <- city_northernrivers %>% mutate(price_numeric = as.numeric(gsub('[$]|[,]', '', price)))
@@ -27,22 +27,22 @@ city_westernaus <- city_westernaus %>% mutate(price_numeric = as.numeric(gsub('[
 # Taking the mean per day
 city_ams <- city_ams %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
 city_lisbon <- city_lisbon %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
-city_prague <- city_prague %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
-city_vienna <-city_vienna %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
+city_ghent <- city_ghent %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
+city_vienna <- city_vienna %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
 city_melbourne <- city_melbourne %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
 city_northernrivers <- city_northernrivers %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
 city_sydney <- city_sydney %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
 city_westernaus <- city_westernaus %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
 
-#ADD COLUMN CITY AND HEMISPHERE--------------------
+# Add column City and Hemisphere
 city_ams<- city_ams %>%
   add_column(City = "Amsterdam") %>% add_column(Hemisphere = "North")
 
 city_lisbon<- city_lisbon %>%
   add_column(City = "Lisbon") %>% add_column(Hemisphere = "North")
 
-city_prague<- city_prague %>%
-  add_column(City = "Prague") %>% add_column(Hemisphere = "North")
+city_ghent<- city_ghent %>%
+  add_column(City = "Ghent") %>% add_column(Hemisphere = "North")
 
 city_vienna<- city_vienna %>%
   add_column(City = "Vienna") %>% add_column(Hemisphere = "North")
@@ -60,7 +60,7 @@ city_westernaus<- city_westernaus %>%
   add_column(City = "Western Australia") %>% add_column(Hemisphere = "South")
 
 #MERGE DATA FRAMES in North cities and South cities----------------------------------------
-merged_cities_north <- rbind(city_ams, city_lisbon, city_prague, city_vienna)
+merged_cities_north <- rbind(city_ams, city_lisbon, city_ghent, city_vienna)
 merged_cities_south <- rbind(city_melbourne, city_northernrivers, city_sydney, city_westernaus)
 
 #function to assign seasons to months depending on the hemisphere
@@ -96,4 +96,5 @@ time2season <- function(x, hemisphere= 'north')  {
 
 merged_cities_north$seasons <- time2season(merged_cities_north$date, 'north')
 merged_cities_south$seasons <- time2season(merged_cities_south$date, 'south')
+
 
