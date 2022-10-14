@@ -1,4 +1,4 @@
-#MERGE NORTH AND SOUTH DATA FRAMES----------------------------------------
+#MERGE NORTH AND SOUTH DATA FRAMES---------------------------------------
 merged_cities_north_south <- rbind(merged_cities_north, merged_cities_south)
 View(merged_cities_north_south)
 
