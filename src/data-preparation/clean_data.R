@@ -97,4 +97,7 @@ time2season <- function(x, hemisphere= 'north')  {
 merged_cities_north$seasons <- time2season(merged_cities_north$date, 'north')
 merged_cities_south$seasons <- time2season(merged_cities_south$date, 'south')
 
+# Write csv files
+write.csv(merged_cities_north, "merged_cities_north.csv")
+write.csv(merged_cities_south, "merged_cities_south.csv")
 
