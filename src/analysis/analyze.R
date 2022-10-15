@@ -2,7 +2,9 @@
 library(readr)
 library(ggplot2)
 library(car)
+install.packages("emmeans")
 library(emmeans)
+install.packages("effectsize") 
 library(effectsize)
 
 # Read csv all_cities_merged
@@ -14,8 +16,9 @@ summary(all_cities_merged)
 all_cities_merged$City <- as_factor(all_cities_merged$City)
 all_cities_merged$seasons <- as_factor(all_cities_merged$seasons)
 
-# Visualization (boxplot)
+# Visualization (boxplot and barchart)
 ggplot(all_cities_merged, aes (x=price_numeric, y=seasons, fill=City)) + geom_col(position="dodge")
+ggplot(all_cities_merged, aes(x=price_numeric, y=seasons, fill=City))+geom_bar(stat="summary", fun="mean")
 
 #Homoscedasticity
 leveneTest(price_numeric ~ City * seasons, all_cities_merged, center=mean)
