@@ -9,7 +9,7 @@ This project gives an insight into how the hemisphere (north and south) affects 
 With rising inflation across the globe and small interest rates on savings, people are looking for other ways to invest their money effectively to make sure their money doesn't slowly evaporate due to inflation. One of the options is by buying a second house which they could rent out for additional income as well. If you want to use your second house to earn additional income, the main question becomes where the best place is to set up your second house. Many accommodations are dependent on seasonal or holiday periods. That is why we will investigate which place has the most (or least) price fluctuation between seasons, so that people can choose where it would be the most convenient for them personally to rent out a second house via Airbnb.
 
 
-Our research question will therefore be What effect does seaonality have on the price of Airbnb, and how does this effect differ for the northern hemisphere versus southern hemisphere?
+Our research question will therefore be: what effect does seaonality have on the price of Airbnb, and how does this effect differ for the northern hemisphere versus southern hemisphere?
  
 
 We chose four cities in the Northern Hemisphere (Amsterdam, Lisbon, Paris, Ghent) and four cities in the Southern Hemisphere (Melbourne, Northern Rivers, Sydney, Western Australia). Four cities in Europe and four cities in Australia. We have chosen Europe and Australia because those cities are the most comparable in terms of prices. This makes it best to compare which locations are most seasonally bound. 
@@ -72,6 +72,7 @@ Any files related to issues with the data or the model estimation will be stored
 Please follow the installation guide on http://tilburgsciencehub.com/.
 - R. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/)
 For R, make sure you have installed and loaded below packages:
+```
 library(ggplot2)
 library(car)
 library(emmeans)
@@ -80,13 +81,14 @@ library(readr)
 library(dplyr)
 library(tidyr)
 library(tidyverse)
+```
 - Make. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/)    
 
 ## Running instructions
 We recommend the following instructions for people that are interested in running the code:
 1. Fork this repository
 2. Open your command line / terminal and run the following: 
-git clone https://github.com/{your username}/Airbnb-Seasonalities.git
+```git clone https://github.com/{your username}/Airbnb-Seasonalities.git```
 3. Set your working directory to working directory and run the following command: 
 make
 4. When make has succesfully run all the code, it will generate <--add file name-->. 
@@ -99,7 +101,11 @@ make
 This research is carried out in implementation of the course Data Preparation and Workflow Management. This is a part of the Master program of Marketing Analytics at Tilburg University. The following authors contributed to this research:
 
 [Zhiyong Zhou](https://github.com/zhiyongzhou0125)
+
 [Marieke Beerens](https://github.com/MariekeBeerens)
+
 [Marlou Klute](https://github.com/MarlouKlute)
+
 [Kim Gresnigt](https://github.com/Kim-data1998)
+
 [Mevludin Ademovic](https://github.com/MevludinAdemovic)
