@@ -2,20 +2,17 @@
 
 ![image](https://user-images.githubusercontent.com/112617983/195584820-e35714a4-8742-4796-b81f-1742badee8ce.jpeg)
 
-This project gives an insight into how hemisphere effects the price of an Airbnb. 
+This project gives an insight into how the hemisphere (north and south) affects the price of an Airbnb listing. 
 
 ## Research motivation
 
-With rising inflation and no interest, people are looking for other ways to use their money effectively. One of the options is a second house. They can rent it out for additional income and immediately invest in their savings. If you want to use your second house to earn additional income, the main question becomes where the best place is to set up your second house. Many accommodations are dependent on seasonal or holiday periods. That is why we will investigate which place has the most (or least) price fluctuation between seasons, so that people can choose where it is most profitable for them to rent out a second house via Airbnb.
+With rising inflation across the globe and small interest rates on savings, people are looking for other ways to invest their money effectively to make sure their money doesn't slowly evaporate due to inflation. One of the options is by buying a second house which they could rent out for additional income as well. If you want to use your second house to earn additional income, the main question becomes where the best place is to set up your second house. Many accommodations are dependent on seasonal or holiday periods. That is why we will investigate which place has the most (or least) price fluctuation between seasons, so that people can choose where it would be the most convenient for them personally to rent out a second house via Airbnb.
 
 
 Our research question will therefore be What effect does seaonality have on the price of Airbnb, and how does this effect differ for the northern hemisphere versus southern hemisphere?
  
 
 We chose four cities in the Northern Hemisphere (Amsterdam, Lisbon, Paris, Ghent) and four cities in the Southern Hemisphere (Melbourne, Northern Rivers, Sydney, Western Australia). Four cities in Europe and four cities in Australia. We have chosen Europe and Australia because those cities are the most comparable in terms of prices. This makes it best to compare which locations are most seasonally bound. 
-
-
-
 
 
 ## Data
@@ -33,10 +30,11 @@ In this chapter we will give a brief overview of the methods that have been appl
 4. Automate and refine this process
 
 ### Results:
-
+Before a ANOVA test can be performed, several assumptions need to be tested. Starting with the Levenetest (testing for homoscedasticity) which shows a value of around 2.2 meaning that the probability of the variances being not equal is very high.  When performing the ANOVA the p-value is larger then alpha meaning that the differences between the means are not statistically significant which states that there is not enough evidence to reject the null hypothesis. 
+ 
 
 ### Conclusion:
-
+When grouping the cities related to the Northern Hemisphere and Southern Hemisphere together there are less price fluctations in the Northern Hemisphere cities compared to the Southern Hemisphere cities. This is shown through the boxplot and barchart as well as the results related to the ANOVA analysis. Therefore it can be concluded that the Northern Hemisphere is best for stable income throughout the year compared to the Southern Hemisphere. However the outcome of the ANOVA test showed that the outcome was not statistically significant which means that there was not enough evidence to support this conclusion of there being variances between the Northern and Soutern Hemisphere cities. 
 
 
 ## Repository overview
