@@ -33,5 +33,5 @@ emmeans(Price_numeric_aov1, pairwise ~ City * seasons, adjust="bonferroni")
 # Partical eta squared
 eta_squared(Anova(Price_numeric_aov1, type=3), ci=0.95, partial = TRUE)
 
-
+pdf("ANOVA_analysis.pdf")
 
