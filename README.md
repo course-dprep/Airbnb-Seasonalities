@@ -70,12 +70,16 @@ Any files related to issues with the data or the model estimation will be stored
 	   
 ## Dependencies
 Please follow the installation guide on http://tilburgsciencehub.com/.
-- Python. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/python/)
-For Python, make sure you have installed below packages: 
-<-- include packages -->
 - R. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/)
 For R, make sure you have installed and loaded below packages:
-<-- include packages --> 
+library(ggplot2)
+library(car)
+library(emmeans)
+library(effectsize)
+library(readr)
+library(dplyr)
+library(tidyr)
+library(tidyverse)
 - Make. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/)    
 
 ## Running instructions
@@ -85,7 +89,7 @@ We recommend the following instructions for people that are interested in runnin
 git clone https://github.com/{your username}/Airbnb-Seasonalities.git
 3. Set your working directory to working directory and run the following command: 
 make
-4. When ake has succesfully run all the code, it will generate something. 
+4. When make has succesfully run all the code, it will generate <--add file name-->. 
 
 
 ## More resources
@@ -94,8 +98,8 @@ make
 
 This research is carried out in implementation of the course Data Preparation and Workflow Management. This is a part of the Master program of Marketing Analytics at Tilburg University. The following authors contributed to this research:
 
-Zhiyong Zhou
-Marieke Beerens
-Marlou Klute
-Kim Gresnigt
-Mevludin Ademovic
+[Zhiyong Zhou](https://github.com/zhiyongzhou0125)
+[Marieke Beerens](https://github.com/MariekeBeerens)
+[Marlou Klute](https://github.com/MarlouKlute)
+[Kim Gresnigt](https://github.com/Kim-data1998)
+[Mevludin Ademovic](https://github.com/MevludinAdemovic)
