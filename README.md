@@ -81,6 +81,7 @@ library(readr)
 library(dplyr)
 library(tidyr)
 library(tidyverse)
+library(haven)
 ```
 - Make. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/)    
 
