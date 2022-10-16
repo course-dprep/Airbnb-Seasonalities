@@ -5,7 +5,6 @@ library(tidyverse)
 library(fastDummies)
 
 # Set the correct working directory
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 setwd("../../gen/data-preparation/input")
 
 merged_cities_north <- read.csv("merged_cities_north.csv")
