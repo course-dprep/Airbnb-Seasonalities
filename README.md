@@ -49,12 +49,6 @@ The generated files are stored in the generated folder "gen".
 
 Within the "gen" folder there are separate folders for the data preparation and the data analysis stages, as well as the final deliverable of the project; namely, "data-preparation", "analysis", and "paper".
 
-Any temporary files will be stored in "temp".
-
-Any final products from the various stages in the pipeline will be stored in the "output" folder.
-
-Any files related to issues with the data or the model estimation will be stored in the "audit folder".
-
 ### Repository structure
 
 	├── README.md
