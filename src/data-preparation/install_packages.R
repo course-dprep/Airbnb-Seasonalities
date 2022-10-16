@@ -1,0 +1,7 @@
+install.packages("readr")
+install.packages("dplyr")
+install.packages("tidyr")
+install.packages("tidyverse")
+install.packages("fastDummies")
+install.packages("emmeans")
+install.packages("effectsize") 
