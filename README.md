@@ -47,7 +47,11 @@ The source code is stored in a folder called "src".
 
 The generated files are stored in the generated folder "gen".
 
-Within the "gen" folder there are separate folders for the data preparation and the data analysis stages, as well as the final deliverable of the project; namely, "data-preparation", "analysis", and "paper".
+Within the "gen" folder there are separate folders for the data preparation and the data analysis stages, as well as the final deliverable of the project; namely, "data-preparation", and "analysis".
+
+Any temporary files will be stored in "temp".
+
+Any final products from the various stages in the pipeline will be stored in the "output" folder.
 
 ### Repository structure
 
@@ -55,7 +59,10 @@ Within the "gen" folder there are separate folders for the data preparation and 
 	├── data
 	├── gen
 	│   ├── analysis
+	│   │	└── output
 	│   └── data-preparation
+	│	├── temp
+	│	└── output
 	└── src
  	   ├── analysis
  	   └── data-preparation
@@ -86,8 +93,6 @@ We recommend the following instructions for people that are interested in runnin
 make
 4. When make has succesfully run all the code, it will generate <--add file name-->. 
 
-
-## More resources
 
 ## About
 
