@@ -16,6 +16,7 @@ city_sydney <- read_csv("australianswsydney.csv")
 city_westernaus <- read_csv("australiawawesternaustralia.csv")
 
 #CLEAN DATAFRAME-----------------------------------------
+# AGGREGATE
 # Remove sign from price and make it numeric
 city_ams <- city_ams %>% mutate(price_numeric = as.numeric(gsub('[$]|[,]', '', price)))
 city_lisbon <- city_lisbon %>% mutate(price_numeric = as.numeric(gsub('[$]|[,]', '', price)))
@@ -36,6 +37,7 @@ city_northernrivers <- city_northernrivers %>%group_by(date)%>%summarise_at(vars
 city_sydney <- city_sydney %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
 city_westernaus <- city_westernaus %>%group_by(date)%>%summarise_at(vars(price_numeric),funs(mean(.,na.rm=TRUE)))
 
+#ADDING CITY AND HEMISPEHERE COLUMNS
 # Add column City and Hemisphere
 city_ams<- city_ams %>%
   add_column(City = "Amsterdam") %>% add_column(Hemisphere = "North")
@@ -65,6 +67,7 @@ city_westernaus<- city_westernaus %>%
 merged_cities_north <- rbind(city_ams, city_lisbon, city_ghent, city_vienna)
 merged_cities_south <- rbind(city_melbourne, city_northernrivers, city_sydney, city_westernaus)
 
+#CONVERTING DATE INTO SEASONS
 #function to assign seasons to months depending on the hemisphere
 time2season <- function(x, hemisphere= 'north')  {
   
