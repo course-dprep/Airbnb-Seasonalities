@@ -1,6 +1,3 @@
-# set the correct working directory
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 # download the raw data
 urls = c("http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2022-09-07/data/calendar.csv.gz",
          "http://data.insideairbnb.com/austria/vienna/vienna/2022-09-11/data/calendar.csv.gz",

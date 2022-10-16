@@ -4,7 +4,6 @@ library(tidyr)
 library(tidyverse)
 
 # set the correct working directory
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 setwd("../../data")
 
 #READ THE CSV FILES---------------------------------------

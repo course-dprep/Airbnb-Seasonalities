@@ -43,3 +43,5 @@ The date and price variables are used for the analysis. The date will be linked 
 The variable price contains $ signs and ',', these signs will be removed using a new variable price_numeric. This shows the price as a numeric so we can get the average of it. For the date, we will have to remove the days to put them together as well. From Year-Month-Date we remove the date so it will be Year-Month, this remains in the same column of date.
 
 
+
+
