@@ -51,14 +51,16 @@ Within the "gen" folder there are separate folders for the data preparation and 
 
 Any final products from the various stages in the pipeline will be stored in the "output" folder.
 
-
 ### Repository structure
 
 	├── README.md
 	├── data
 	├── gen
 	│   ├── analysis
+	│   │	└── output
 	│   └── data-preparation
+	│	├── temp
+	│	└── output
 	└── src
  	   ├── analysis
  	   └── data-preparation
