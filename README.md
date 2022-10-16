@@ -61,12 +61,10 @@ Any files related to issues with the data or the model estimation will be stored
 	├── data
 	├── gen
 	│   ├── analysis
-	│   ├── data-preparation
-	│   └── paper
+	│   └── data-preparation
 	└── src
  	   ├── analysis
- 	   ├── data-preparation
- 	   └── paper
+ 	   └── data-preparation
 	   
 ## Dependencies
 Please follow the installation guide on http://tilburgsciencehub.com/.
