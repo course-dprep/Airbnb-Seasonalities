@@ -1,0 +1,45 @@
+---
+title: "Data exploration"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::kable
+
+```
+<br />
+**Raw data**
+<br />
+For the study, we compare the Northern Hemisphere with the Southern Hemisphere. The following cities were chosen for this purpose: Melbourne", "Amsterdam", "Lisbon", "Ghent", "Vienna", "Sydney", "Western", "Northern Rivers" The raw data obtained has respective observations of 6655843, 2515211 , 6909093 ,410990, 4305905, 7696832, 3613183, 2360820. The pie chart below shows the distribution of the cities. 
+
+```{r pressure, echo=FALSE}
+slices <- c(6655843, 2515211, 6909093 ,410990, 4305905, 7696832, 3613183, 2360820)
+lbls <- c("Melbourne", "Amsterdam", "Lisbon", "Ghent", "Vienna", "Sydney", "Western", "Northern Rivers")
+pie(slices, labels = lbls, main="Pie Chart of City's")
+
+```
+<br />
+As can be seen, the Northern Hemisphere is a little less than half the total and the Southern Hemisphere a little more. The total number of observations is 34,467,877, which means that both hemispheres have a large number of observations to compare with each other.
+
+<br />
+**Definition of variables**
+
+|Variable                        |Description                                 |
+|--------------------------------|--------------------------------------------|
+|listing_id                      |Unique number for a house in a city         |
+|date                            |Date variables information year-month-date  |
+|available                       |Available house t=free f=occupied           |
+|price                           |Price for one night in $                    |
+|adjust_price                    |Adjust price for one night in $             |
+|minimum_nights                  |minimum nights to book                      |
+|maximum_nights                  |macimum nights to book                      |
+                    
+The date and price variables are used for the analysis. The date will be linked to the season. For the price, the average is taken so that the observations can decrease and a better analysis can be done. 
+<br />
+
+**Clean data**
+<br />
+The variable price contains $ signs and ',', these signs will be removed using a new variable price_numeric. This shows the price as a numeric so we can get the average of it. For the date, we will have to remove the days to put them together as well. From Year-Month-Date we remove the date so it will be Year-Month, this remains in the same column of date.
+
+
