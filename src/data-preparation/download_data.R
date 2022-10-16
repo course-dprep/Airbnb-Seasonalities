@@ -1,8 +1,17 @@
-# Download dataset 1
-# dir.create('./data/dataset1')  # Uncomment if need to create directory with R
-download.file('https://rgreminger.github.io/files/dataset1.csv','./data/dataset1/dataset1.csv')
+# download the raw data
+urls = c("http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2022-09-07/data/calendar.csv.gz",
+         "http://data.insideairbnb.com/austria/vienna/vienna/2022-09-11/data/calendar.csv.gz",
+         "http://data.insideairbnb.com/belgium/vlg/ghent/2022-09-21/data/calendar.csv.gz",
+         "http://data.insideairbnb.com/portugal/lisbon/lisbon/2022-09-13/data/calendar.csv.gz",
+         "http://data.insideairbnb.com/australia/vic/melbourne/2022-09-09/data/calendar.csv.gz",
+         "http://data.insideairbnb.com/australia/nsw/northern-rivers/2022-09-14/data/calendar.csv.gz",
+         "http://data.insideairbnb.com/australia/nsw/sydney/2022-09-09/data/calendar.csv.gz",
+         "http://data.insideairbnb.com/australia/wa/western-australia/2022-09-20/data/calendar.csv.gz")
 
-# Download dataset 2
-# dir.create('./data/dataset2')  # Uncomment if need to create directory with R
-download.file('https://rgreminger.github.io/files/dataset2.csv','./data/dataset2/dataset2.csv')
+for (url in urls) {
+  filename = paste0(gsub('[^a-z]', '', url), '.csv') 
+  filename = gsub('httpdatainsideairbnbcom', '', filename)
+  filename = gsub('datacalendarcsvgz', '', filename)
+  download.file(url, file.path('../../data', destfile = filename)) 
+}
 
