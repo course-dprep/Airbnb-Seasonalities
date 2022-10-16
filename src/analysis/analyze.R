@@ -4,6 +4,7 @@ library(ggplot2)
 library(car)
 library(emmeans)
 library(effectsize)
+library(haven)
 
 # set correct working directory
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
@@ -12,7 +13,7 @@ setwd("../../gen/data-preparation/output")
 # Read csv all_cities_merged
 all_cities_merged <- read_csv("all_cities_merged.csv")
 
-pdf("../../analysis//output/ANOVA_analysis.pdf")
+pdf("../../analysis/output/ANOVA_analysis.pdf")
 
 # Make City and seasons factors
 all_cities_merged$City <- as_factor(all_cities_merged$City)
@@ -36,5 +37,4 @@ emmeans(Price_numeric_aov1, pairwise ~ City * seasons, adjust="bonferroni")
 eta_squared(Anova(Price_numeric_aov1, type=3), ci=0.95, partial = TRUE)
 
 dev.off()
-
 
