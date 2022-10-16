@@ -1,3 +1,4 @@
+# install required packages for this pipeline
 install.packages("readr")
 install.packages("dplyr")
 install.packages("tidyr")
@@ -5,3 +6,5 @@ install.packages("tidyverse")
 install.packages("fastDummies")
 install.packages("emmeans")
 install.packages("effectsize") 
+install.packages("car")
+install.packages("ggplot2")
