@@ -1,5 +1,5 @@
 DATA = ../../DATA
-INPUT = ../../gen/DATA-preparation/input
+TEMP = ../../gen/DATA-preparation/temp
 OUTPUT = ../../gen/DATA-preparation/output
 
 all: $(DATA)/thenetherlandsnorthhollandamsterdam.csv \
@@ -10,8 +10,8 @@ $(DATA)/australiavicmelbourne.csv \
 $(DATA)/australianswnorthernrivers.csv \
 $(DATA)/australianswsydney.csv \
 $(DATA)/australiawawesternaustralia.csv \
-$(INPUT)/merged_cities_north.csv \
-$(INPUT)/merged_cities_south.csv \
+$(TEMP)/merged_cities_north.csv \
+$(TEMP)/merged_cities_south.csv \
 $(OUTPUT)/all_cities_merged.csv 
 
 $(DATA)/thenetherlandsnorthhollandamsterdam.csv \
@@ -24,8 +24,8 @@ $(DATA)/australianswsydney.csv \
 $(DATA)/australiawawesternaustralia.csv: download_DATA.R
 	Rscript download_DATA.R
 
-$(INPUT)/merged_cities_north.csv \
-$(INPUT)/merged_cities_south.csv: \
+$(TEMP)/merged_cities_north.csv \
+$(TEMP)/merged_cities_south.csv: \
 clean_DATA.R \
 $(DATA)/thenetherlandsnorthhollandamsterdam.csv \
 $(DATA)/portugallisbonlisbon.csv \
@@ -39,11 +39,11 @@ $(DATA)/australiawawesternaustralia.csv
 
 $(OUTPUT)/all_cities_merged.csv: \
 merge_data.R \
-$(INPUT)/merged_cities_north.csv \
-$(INPUT)/merged_cities_south.csv
+$(TEMP)/merged_cities_north.csv \
+$(TEMP)/merged_cities_south.csv
 	Rscript merge_data.R
 
 clean:
 	R -e "unlink('../../data/*.csv')"
-	R -e "unlink('../../gen/data-preparation/input/*.csv')"
+	R -e "unlink('../../gen/data-preparation/temp/*.csv')"
 	R -e "unlink('../../gen/data-preparation/output/*.csv')"

@@ -5,7 +5,7 @@ library(tidyverse)
 library(fastDummies)
 
 # Set the correct working directory
-setwd("../../gen/data-preparation/input")
+setwd("../../gen/data-preparation/temp")
 
 merged_cities_north <- read.csv("merged_cities_north.csv")
 merged_cities_south <- read.csv("merged_cities_south.csv")
