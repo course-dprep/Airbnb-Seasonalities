@@ -3,6 +3,8 @@ library(dplyr)
 library(tidyr)
 library(tidyverse)
 
+setwd("../../data")
+
 #READ THE CSV FILES---------------------------------------
 city_ams <- read_csv("thenetherlandsnorthhollandamsterdam.csv")
 city_lisbon <- read_csv("portugallisbonlisbon.csv")
@@ -98,6 +100,7 @@ merged_cities_north$seasons <- time2season(merged_cities_north$date, 'north')
 merged_cities_south$seasons <- time2season(merged_cities_south$date, 'south')
 
 # Write csv files
-write.csv(merged_cities_north, "merged_cities_north.csv")
-write.csv(merged_cities_south, "merged_cities_south.csv")
+
+write.csv(merged_cities_north, file.path('../gen/data-preparation/input', "merged_cities_north.csv"))
+write.csv(merged_cities_south, file.path('../gen/data-preparation/input', "merged_cities_south.csv"))
 

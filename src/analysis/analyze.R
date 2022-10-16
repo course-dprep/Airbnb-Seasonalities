@@ -1,16 +1,14 @@
-# Install and load packages
+# load packages
 library(readr)
 library(ggplot2)
 library(car)
-install.packages("emmeans")
 library(emmeans)
-install.packages("effectsize") 
 library(effectsize)
 
+setwd("../../gen/data-preparation/output")
 # Read csv all_cities_merged
 all_cities_merged <- read_csv("all_cities_merged.csv")
-View(all_cities_merged)
-summary(all_cities_merged)
+
 
 # Make City and seasons factors
 all_cities_merged$City <- as_factor(all_cities_merged$City)
@@ -34,4 +32,3 @@ emmeans(Price_numeric_aov1, pairwise ~ City * seasons, adjust="bonferroni")
 eta_squared(Anova(Price_numeric_aov1, type=3), ci=0.95, partial = TRUE)
 
 pdf("ANOVA_analysis.pdf")
-
