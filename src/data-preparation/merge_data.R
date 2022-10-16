@@ -59,6 +59,7 @@ westernaus_summer <- subset(merged_cities_north_south, City == 'Western Australi
 # Merge summer
 merged_cities_summer <- rbind(amsterdam_summer, lisbon_summer, ghent_summer, vienna_summer, melbourne_summer, northernrivers_summer, sydney_summer, westernaus_summer)
 
+
 # Winter
 amsterdam_winter <- subset(merged_cities_north_south, City == 'Amsterdam' & seasons == 'winter')
 lisbon_winter <- subset(merged_cities_north_south, City == 'Lisbon' & seasons == 'winter')
@@ -75,7 +76,14 @@ merged_cities_winter <- rbind(amsterdam_winter, lisbon_winter, ghent_winter, vie
 # Merge every data frame
 all_cities_merged <- rbind(merged_cities_autumn, merged_cities_spring, merged_cities_summer, merged_cities_winter)
 
+
 # Write csv files
 write.csv(all_cities_merged, file.path('../output',"all_cities_merged.csv"))
+
+
+
+
+
+
 
 

@@ -9,6 +9,7 @@ setwd("../../gen/data-preparation/output")
 # Read csv all_cities_merged
 all_cities_merged <- read_csv("all_cities_merged.csv")
 
+
 # Make City and seasons factors
 all_cities_merged$City <- as_factor(all_cities_merged$City)
 all_cities_merged$seasons <- as_factor(all_cities_merged$seasons)
